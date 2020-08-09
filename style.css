@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("image/body.jpg") no-repeat;
+    background-size: cover;
+    width: auto;
+    overflow-x: hidden;
+    background-attachment: fixed;
+}
+
+.container {
+    width: 1500px;
+    margin: 0 auto;
+}
+.header {
+    font-family: 'Roboto Slab', serif;
+    background: #ececed;
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+.dws-menu{
+    position: relative;
+}
+
+.dws-menu > ul {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.dws-menu > ul li a {
+    display: block;
+    background: #ececed;
+    padding: 15px 30px 15px 40px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 600;
+    transition: .2s ease;
+    border: 2px solid transparent;
+}
+
+
+.dws-menu > ul li a:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 5);
+    border: 2px solid gray;
+    transition: .2s ease;
+
+}
+
+.dws-menu > ul li > a i.fa {
+    position: relative;
+    top: 2px;
+    left: -20px;
+    font-size: 24px;
+    color: cornflowerblue;
+}
+/*sub-menu*/
+.dws-menu li .sub-menu {
+    position: absolute;
+    display: none;
+    left: 0;
+    width: 100%;
+    background: #ececed;
+}
+.dws-menu li > ul li a {
+    padding: 10px;
+}
+
+.dws-menu li:hover > .sub-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
